@@ -1,0 +1,94 @@
+*
+  box-sizing: border-box
+
+.App
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  background: #eee
+
+.GameField
+  padding: 20px
+  min-width: 500px
+  max-width: 1200px
+
+  &Main
+    padding: 10px 20px
+    border: 3px solid #333
+    min-height: 200px
+    display: flex
+    justify-content: space-between
+    background: white
+
+  &Section
+    flex: 0 0 50%
+    padding: 0px 10px
+    &:not(:first-child)
+      border-left: 1px solid #333
+
+    &-title
+      width: 100%
+      text-align: center
+      font-size: 16px
+      text-transform: uppercase
+      font-weight: 600
+
+    &-image
+      width: 100%
+      object-fit: contain
+      display: flex
+      justify-content: center
+      align-items: center
+
+      img
+        height: 250px
+
+  &Stats
+    padding: 10px
+
+    &Item
+      padding: 6px
+      display: flex
+      align-items: center
+      font-size: 14px
+      label
+        width: 60px
+      span
+        font-weight: 600
+
+      &--large
+        label
+          font-size: 18px
+        span
+          font-size: 24px
+
+  &Actions
+    padding: 10px
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+
+  &Log
+    padding: 0 30px
+
+.Log
+  width: 100%
+  height: 150px
+  background: white
+  border: 3px solid #333
+  padding: 10px
+  overflow: auto
+
+  &Item
+    &:not(:first-child)
+      margin-top: 6px
+
+.Button
+  cursor: pointer
+  border: 2px solid #333
+  border-radius: 5px
+  padding: 6px 12px
+  background: #aaa
+  margin: 0 6px
