@@ -2,6 +2,10 @@
 
 This is a HTML5 application, built with [Brunch](http://brunch.io).
 
+## Additional
+
+* [Presentation](https://dl.dropboxusercontent.com/u/69748556/hillel-00.pdf)
+
 ## Getting started
 * Install (if you don't have them):
     * [Node.js](http://nodejs.org): `brew install node` on OS X
